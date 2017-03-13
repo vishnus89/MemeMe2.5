@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2733FFF51E76231200DABAF2 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2733FFF41E76231200DABAF2 /* Meme.swift */; };
+		275C3A841E7706F900DC48F5 /* MemeDetailViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C3A831E7706F900DC48F5 /* MemeDetailViewController1.swift */; };
+		275C3A861E770AD700DC48F5 /* MemeTableViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C3A851E770AD700DC48F5 /* MemeTableViewController1.swift */; };
+		275C3A881E770AEB00DC48F5 /* MemeTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C3A871E770AEB00DC48F5 /* MemeTableViewCell1.swift */; };
+		275C3A8A1E771A0900DC48F5 /* CollectionViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C3A891E771A0900DC48F5 /* CollectionViewController1.swift */; };
+		275C3A8C1E771A1400DC48F5 /* CollectionViewCell12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C3A8B1E771A1400DC48F5 /* CollectionViewCell12.swift */; };
 		279C474E1E74CE1600234A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C474D1E74CE1600234A36 /* AppDelegate.swift */; };
-		279C47501E74CE1600234A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C474F1E74CE1600234A36 /* ViewController.swift */; };
+		279C47501E74CE1600234A36 /* MemeEditorVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C474F1E74CE1600234A36 /* MemeEditorVC2.swift */; };
 		279C47531E74CE1600234A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279C47511E74CE1600234A36 /* Main.storyboard */; };
 		279C47551E74CE1600234A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279C47541E74CE1600234A36 /* Assets.xcassets */; };
 		279C47581E74CE1600234A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279C47561E74CE1600234A36 /* LaunchScreen.storyboard */; };
@@ -34,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2733FFF41E76231200DABAF2 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Meme.swift; path = ../Meme.swift; sourceTree = "<group>"; };
+		275C3A831E7706F900DC48F5 /* MemeDetailViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeDetailViewController1.swift; sourceTree = "<group>"; };
+		275C3A851E770AD700DC48F5 /* MemeTableViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemeTableViewController1.swift; path = ../MemeTableViewController1.swift; sourceTree = "<group>"; };
+		275C3A871E770AEB00DC48F5 /* MemeTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemeTableViewCell1.swift; path = ../MemeTableViewCell1.swift; sourceTree = "<group>"; };
+		275C3A891E771A0900DC48F5 /* CollectionViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController1.swift; path = ../CollectionViewController1.swift; sourceTree = "<group>"; };
+		275C3A8B1E771A1400DC48F5 /* CollectionViewCell12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell12.swift; path = ../CollectionViewCell12.swift; sourceTree = "<group>"; };
 		279C474A1E74CE1600234A36 /* MemeMe2.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMe2.5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279C474D1E74CE1600234A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		279C474F1E74CE1600234A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		279C474F1E74CE1600234A36 /* MemeEditorVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeEditorVC2.swift; sourceTree = "<group>"; };
 		279C47521E74CE1600234A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		279C47541E74CE1600234A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279C47571E74CE1600234A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,8 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				279C474D1E74CE1600234A36 /* AppDelegate.swift */,
-				279C474F1E74CE1600234A36 /* ViewController.swift */,
+				279C474F1E74CE1600234A36 /* MemeEditorVC2.swift */,
 				279C47511E74CE1600234A36 /* Main.storyboard */,
+				275C3A831E7706F900DC48F5 /* MemeDetailViewController1.swift */,
+				275C3A8B1E771A1400DC48F5 /* CollectionViewCell12.swift */,
+				275C3A891E771A0900DC48F5 /* CollectionViewController1.swift */,
+				275C3A871E770AEB00DC48F5 /* MemeTableViewCell1.swift */,
+				275C3A851E770AD700DC48F5 /* MemeTableViewController1.swift */,
+				2733FFF41E76231200DABAF2 /* Meme.swift */,
 				279C47541E74CE1600234A36 /* Assets.xcassets */,
 				279C47561E74CE1600234A36 /* LaunchScreen.storyboard */,
 				279C47591E74CE1600234A36 /* Info.plist */,
@@ -193,6 +211,7 @@
 				TargetAttributes = {
 					279C47491E74CE1600234A36 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S4NUC58L8K;
 						ProvisioningStyle = Automatic;
 					};
 					279C475D1E74CE1600234A36 = {
@@ -259,8 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279C47501E74CE1600234A36 /* ViewController.swift in Sources */,
+				2733FFF51E76231200DABAF2 /* Meme.swift in Sources */,
+				275C3A861E770AD700DC48F5 /* MemeTableViewController1.swift in Sources */,
+				275C3A8C1E771A1400DC48F5 /* CollectionViewCell12.swift in Sources */,
+				275C3A8A1E771A0900DC48F5 /* CollectionViewController1.swift in Sources */,
+				275C3A841E7706F900DC48F5 /* MemeDetailViewController1.swift in Sources */,
+				279C47501E74CE1600234A36 /* MemeEditorVC2.swift in Sources */,
 				279C474E1E74CE1600234A36 /* AppDelegate.swift in Sources */,
+				275C3A881E770AEB00DC48F5 /* MemeTableViewCell1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +437,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S4NUC58L8K;
 				INFOPLIST_FILE = MemeMe2.5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Viper.MemeMe2-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +451,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S4NUC58L8K;
 				INFOPLIST_FILE = MemeMe2.5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Viper.MemeMe2-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +534,7 @@
 				279C47741E74CE1600234A36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		279C47751E74CE1600234A36 /* Build configuration list for PBXNativeTarget "MemeMe2.5Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +543,7 @@
 				279C47771E74CE1600234A36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		279C47781E74CE1600234A36 /* Build configuration list for PBXNativeTarget "MemeMe2.5UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +552,7 @@
 				279C477A1E74CE1600234A36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

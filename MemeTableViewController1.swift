@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-
+private let reuseIdentifier = "tableCell1"
 class MemeTableViewController1: UITableViewController {
     
     var memes: [Meme]?
@@ -18,7 +18,7 @@ class MemeTableViewController1: UITableViewController {
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = editButtonItem
-}
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -28,13 +28,13 @@ class MemeTableViewController1: UITableViewController {
         reloadMemesFromSource()
         navigationItem.leftBarButtonItem?.isEnabled = (memes?.count ?? 0) > 0
     }
-    
+    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return memes?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell1", for: indexPath) as! MemeTableViewCell1
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! MemeTableViewCell1
         
         let meme = memes?[indexPath.row]
         cell.meme = meme
@@ -46,7 +46,7 @@ class MemeTableViewController1: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             deleteSingleMemeAtIndex(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.deleteRows(at: [indexPath], with:.automatic)
         }
     }
     
@@ -57,7 +57,6 @@ class MemeTableViewController1: UITableViewController {
             VC.meme = Meme(from: memes?[(indexPath?.row)!])
         }
     }
-    
 }
 
 

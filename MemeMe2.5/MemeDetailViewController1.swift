@@ -4,9 +4,8 @@
 //
 //  Created by Vishnu Deep Samikeri on 3/13/17.
 //  Copyright © 2017 Vishnu Deep Samikeri. All rights reserved.
-//
+/* Add an Edit button(Redo) as seperate VC to the Meme Detail View that launches the Meme Editor to allow the user to edit an already existing meme.*/
 
-import Foundation
 import UIKit
 
 
@@ -26,7 +25,6 @@ class MemeDetailViewController1: UIViewController, RedoDelegate {
         super.viewWillAppear(true)
         navigationController?.hidesBarsOnTap = true
         showImage()
-        hideBar()
     }
     
     func showImage() {
@@ -37,21 +35,17 @@ class MemeDetailViewController1: UIViewController, RedoDelegate {
         imageView1.image = image
     }
     
-    func hideBar() {
-        navigationController?.isNavigationBarHidden = true
-    }
-    
     @IBAction func redo(_ sender: AnyObject) {
         
-        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-        let VC = storyBoard.instantiateViewController(withIdentifier: "MemeEditorVC2") as! MemeEditorVC2
-        VC.meme = meme
-        VC.delegate = self
-        present(VC, animated:  true, completion:  nil)
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let VC1 = storyboard.instantiateViewController(withIdentifier: "MemeEditorVC2") as! MemeEditorVC2
+        VC1.meme = meme
+        VC1.delegate = self
+        present(VC1, animated: true, completion: nil)
     }
     
     func backToList(controller: MemeEditorVC2) {
-        _ = self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
 }

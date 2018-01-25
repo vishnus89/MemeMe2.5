@@ -13,8 +13,8 @@ private let reuseIdentifier = "collectionCell1"
 
 class CollectionViewController1: UICollectionViewController {
     
-    let CELL_PER_ROW_PORTRAIT = 4
-    let CELL_PER_ROW_LANDSCAPE = 6
+    let CELL_PER_ROW_PORTRAIT = 3
+    let CELL_PER_ROW_LANDSCAPE = 5
     let CELL_SPACING = 2
     
     var CELL_PER_ROW: Int {
@@ -33,7 +33,6 @@ class CollectionViewController1: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = editButtonItem
     }
     
     override func viewWillAppear(_ animated: Bool) {
